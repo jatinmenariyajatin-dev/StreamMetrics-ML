@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Revenue Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎬 Netflix Revenue Prediction</h1>
+
+    <div class="form">
+
+        <input type="number" id="ucan_members" placeholder="UCAN Members">
+
+        <input type="number" id="emea_members" placeholder="EMEA Members">
+
+        <input type="number" id="latam_members" placeholder="LATAM Members">
+
+        <input type="number" id="apac_members" placeholder="APAC Members">
+
+        <input type="number" step="0.01" id="ucan_arpu" placeholder="UCAN ARPU">
+
+        <input type="number" step="0.01" id="emea_arpu" placeholder="EMEA ARPU">
+
+        <input type="number" step="0.01" id="latam_arpu" placeholder="LATAM ARPU">
+
+        <input type="number" step="0.01" id="apac_arpu" placeholder="APAC ARPU">
+
+        <button onclick="predictRevenue()">
+            Predict Revenue
+        </button>
+
+    </div>
+
+    <div class="result">
+        <h2 id="prediction">
+            Predicted Revenue: --
+        </h2>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
